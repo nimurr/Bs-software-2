@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600&display=swap');
+
+*{
+    font-family: 'Rubik', sans-serif;
+}
+.time_countdown{
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+@keyframes animate-zoom {
+  to {
+    transform: scale(1);
+  }
+
+  from {
+    transform: scale(1.35);
+  }
+}
+.animate-zoom {
+  animation: animate-zoom 0.5s alternate-reverse infinite;
+}
+
+
+
+@keyframes robot-ani {
+  50% {
+    transform: rotate(-2deg);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+}
+.robot-ani {
+  animation: robot-ani 5s linear infinite;
+}
+
+/* robot animation */
+@keyframes rocket-ani {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.rocket-ani {
+  animation: rocket-ani 5s linear infinite;
+}
+
+
+
+.headers_background{
+  min-height: 60vh;
+  width: 100%;
+  background: linear-gradient(to left , #000000a2 , #000000a2) , url('https://res.cloudinary.com/dav9mftpk/image/upload/v1701500535/Hero_banner_uk8d44.jpg');
+}
+
+
+.custome_Shadow{
+  box-shadow: #00000029 0 0px 4px,#0000000f 0 0 0 1px!important;
+}
+
+
+
+/*================== review Slider ================ */
+
+#app {
+  height: 100%;
+}
+/* html,
+body {
+  position: relative;
+  height: 100%;
+} */
+
+/* body { */
+  /* background: #eee; */
+  /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px; 
+  color: #000;
+  margin: 0;
+  padding: 0; */
+ /* } */
+
+ .reviewBG{
+  /* background: url('https://i.ibb.co/kMqVwrH/kisspng-blue-wave-curve-illustration-blue-ribbon-decorative-elements-5aa748946491f3-0458354215209125.png'); */
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+ }
+
+.swiper {
+  width: 100%;
+  
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+
